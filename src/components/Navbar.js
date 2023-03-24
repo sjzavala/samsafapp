@@ -29,7 +29,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
+            InHerent Human Technologies
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -38,7 +38,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                About InHerent Human Technologies
               </Link>
             </li>
             <li className='nav-item'>
@@ -47,30 +47,30 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Physicians
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/Physicians'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                
               </Link>
             </li>
-
+            Contact Information
             <li>
               <Link
-                to='/sign-up'
+                to='/Contact Information'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Book Appointments
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>Book Appointments</Button>}
         </div>
       </nav>
     </>
